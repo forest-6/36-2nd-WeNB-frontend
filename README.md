@@ -6,7 +6,7 @@
 - 선정이유
   - 반응형 사이트, 케럿셀, 아코디언, 리뷰 평점 분포 그래프, 평점 표현 시 소수 한 자리 반올림, 쿼리파라미터,Calendar 라이브러리 사용, 페이지네이션, 오더링, 다중 필터 기능,네이버 맵 API 사용, 파일 첨부 구현
 
----
+
 
 ### 개발 인원 및 기간
 
@@ -16,7 +16,7 @@
   - FE : 김진혁, 이빛나, 임승민, 정원호
   - BE : 박근우, 이상우, 이석원
 
----
+
 
 ### 기술스택
 
@@ -44,13 +44,13 @@
 
 - 협업 툴 : <img src="https://img.shields.io/badge/Notion-1c1c1c?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-553830?style=flat-square&logo=Slack&logoColor=white"/> <img src="https://img.shields.io/badge/Trello-6441a5?style=flat-square&logo=Trello&logoColor=white"/>
 
----
+
 
 ### 구현 영상
 
 ## <a href="https://youtu.be/DWaKFjUI7Ew">😎👍 구현영상</a>
 
----
+
 
 ### FE 구현 기능
 
@@ -63,25 +63,28 @@
 
 ---
 
-### Host 페이지 구현 과정
 
-- Flow
-  <img src="https://user-images.githubusercontent.com/85611408/189060474-e2a718ee-7279-4280-a2ad-be96a63a2d98.JPG"/>
+**카카오 소셜 로그인**
 
-- Page
-  - 기존 에어비앤비 디자인을 모티브로 하여 유사하게 구현하였습니다.
-  - 에어비앤비
-    <img src="https://user-images.githubusercontent.com/85611408/189060435-5a419736-06bf-4c0e-bbef-956adeb94f5f.JPG"/>
-  - WeNB
-    <img src="https://user-images.githubusercontent.com/85611408/189060380-b1bb888b-5a5b-4f3a-8a4b-642ac540656f.JPG"/>
-- 다중 Image 업로드, 삭제
-  <img src="https://user-images.githubusercontent.com/85611408/189060409-2aecc952-1c74-495a-99bc-f43b26073ffd.gif"/>
+- 카카오 소셜 로그인을 통한 회원가입/ 로그인
+- 로그인시 JWT 토큰 localStorage에 저장
+- 로그인 상태인 경우 호스트모드 버튼 표시
+- 로그아웃시 JWT 토큰 localStorage에서 삭제
 
----
+![로그인](https://user-images.githubusercontent.com/92246102/190846719-67a75320-fc87-4c7d-8a71-eb80e7dee55a.gif)
+
+
+**필터링**
+
+- 양방향 Range로 최소,최고 가격 설정
+- 체크박스로 편의시설 선택
+- 전체해제로 선택된 편의시설 수정 가능
+- 화면에 필터링된 숙소 표시
+
+![필터링 시연](https://user-images.githubusercontent.com/92246102/190846723-82938f54-8cf2-4dee-acac-c433b97f1a7e.gif)
+
 
 ## Reference
-
----
 
 - 이 프로젝트는 에어비엔비 사이트를 참조하여 학습목적으로 만들었습니다.
 - 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
