@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import FilterCheckSingle from './FilterCheckSingle';
 import FilterPrice from './FilterPrice';
 import variables from '../../../styles/variables';
-import { useNavigate } from 'react-router-dom';
+import BASE_URL from '../../../config';
 
 const Filter = ({ onSetIsFilterVisible }) => {
   const [checkedList, setCheckedList] = useState([]);
@@ -16,7 +17,7 @@ const Filter = ({ onSetIsFilterVisible }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://3.34.160.18:3000/places/amenities', {
+    fetch(`${BASE_URL}/places/amenities`, {
       method: 'GET',
       header: { 'Content-Type': 'application/json' },
     })

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Login from '../../Login/Login';
 import LoginBlackOut from '../../Login/components/LoginBlackOut';
 import variables from '../../../styles/variables';
+import BASE_URL from '../../../config';
 
 const NavUserMenu = ({ setIsUserVisible }) => {
   const tokenPossession = localStorage.getItem('TOKEN');
@@ -18,7 +19,7 @@ const NavUserMenu = ({ setIsUserVisible }) => {
   };
 
   const logoutHandle = () => {
-    fetch(`http://3.34.160.18:3000/kakao/logout`, {
+    fetch(`${BASE_URL}/kakao/logout`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +83,7 @@ const NavUserContainer = styled.div`
   border-radius: 10px;
   border: 1px solid #e8e8e8;
   box-shadow: 0px 0px 9px 3px rgba(94, 94, 94, 0.21);
-  z-index: 11;
+  z-index: 14;
   background-color: white;
 `;
 

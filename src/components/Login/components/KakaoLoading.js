@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from '../../../config';
 
-const KakaoLoding = () => {
+const KakaoLoading = () => {
   let code = new URL(window.location.href).searchParams.get('code');
   const navigate = useNavigate();
 
@@ -9,7 +10,7 @@ const KakaoLoding = () => {
     const goToMain = () => {
       navigate('/');
     };
-    fetch(`http://3.34.160.18:3000/kakao/auth?code=${code}`, {
+    fetch(`${BASE_URL}/kakao/auth?code=${code}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -29,4 +30,4 @@ const KakaoLoding = () => {
   }, [code, navigate]);
 };
 
-export default KakaoLoding;
+export default KakaoLoading;

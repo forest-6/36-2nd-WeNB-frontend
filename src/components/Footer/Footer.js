@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <div>
+    <>
       <FooterWrapOn className={toggle === true ? 'on' : ''}>
         <button type="button" className="closeBtn" onClick={FooterHolder}>
           X
@@ -85,9 +85,10 @@ const Footer = () => {
           있습니다.
         </FooterSub>
       </FooterWrap>
-    </div>
+    </>
   );
 };
+
 const FooterWrapOn = styled.div`
   height: 0;
   overflow: hidden;
@@ -96,7 +97,7 @@ const FooterWrapOn = styled.div`
   width: 100%;
   bottom: 0;
   background: #fff;
-  z-index: 10;
+  z-index: 12;
   left: 0;
   border-radius: 20px;
 
@@ -107,6 +108,7 @@ const FooterWrapOn = styled.div`
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
+    z-index: 11;
   }
 
   &.on {
@@ -159,9 +161,9 @@ const FooterWrap = styled.div`
   left: 0;
   background: #fff;
   padding: 20px 80px;
-  z-index: 13;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
+  z-index: 13;
 `;
 
 const FooterDown = styled.div`

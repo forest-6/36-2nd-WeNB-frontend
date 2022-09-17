@@ -1,4 +1,4 @@
-const BASE_URL = 'http://3.34.160.18:3000';
+const BASE_URL = 'http://10.58.4.165:3000';
 
 const API = {
   place: `${BASE_URL}/places/?limit=20&offset=`,
